@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Browser</title>
+    <style>
+	table {
+    border-collapse: collapse;
+    width: 70%;
+    border: 20px solid red; /* Grube obramowanie wokół tabeli */
+}
+
+th, td {
+    border: 4px solid red; /* Obramowanie 1 piksel szerokości, czarne */
+    padding: 16px;
+    text-align: left;
+    font-family: 'Arial', sans-serif; /* Pierwsza rodzina czcionek */
+    font-size: 16px; /* Pierwszy rozmiar czcionki */
+}
+
+th.center, td.center {
+    text-align: center;
+    font-family: 'Times New Roman', serif; /* Druga rodzina czcionek */
+    font-size: 18px; /* Drugi rozmiar czcionki */
+}
+
+th.header-bar {
+    border: 1px solid red;
+    background-color: white; /* Kolor tła paska */
+    text-align: center;
+}
+
+td.no-border {
+    border: none; /* Usunięcie obramowania */
+}
+
+/* Kolorowanie odpowiednich komórek */
+td.Nr, th.header-bar {
+    color: black; /* Kolor tekstu czarny */
+}
+
+td.Rodzaj {
+    color: green; /* Kolor tekstu zielony */
+    font-size: 14px; /* Rozmiar czcionki mniejszy */
+}
+
+td.Producent {
+    color: orange; /* Kolor tekstu pomarańczowy */
+    font-size: 20px; /* Rozmiar czcionki większy */
+    text-align: right; /* Wyrównanie do prawej */
+}
+
+td.Model {
+    color: purple; /* Kolor tekstu fioletowy */
+    font-size: 16px; /* Rozmiar czcionki standardowy */
+}
+
+td.cena, td.intel-amd {
+    color: red; /* Kolor tekstu czerwony */
+    font-size: 18px; /* Rozmiar czcionki większy */
+    text-align: left; /* Wyrównanie do lewej */
+}
+
+/* Pokoloruj co drugi wiersz na różne odcienie niebieskiego */
+tr:nth-child(even) {
+    background-color: #ccebff; /* Jasny niebieski */
+}
+
+tr:nth-child(odd) {
+    background-color: #99c2ff; /* Ciemny niebieski */
+}
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            background-color: #FF3409; /* Tło całej tabeli */
+        }
+
+        th, td {
+            border: 4px solid #FF3409; /* Obramowanie 1 piksel szerokości, czarne */
+            padding: 16px;
+            text-align: left;
+            background-color: #3ab9e6; 
+        }
+
+        th.center, td.center {
+            text-align: center;
+            background-color: #02b5f6; /* Jasnoniebieskie tło */
+        }
+
+        th.header-bar {
+            border: 1px solid #000000;
+            background-color: #a4a2a2; /* Kolor tła paska */
+            text-align: center;
+        }
+
+        td.no-border {
+            border: none; /* Usunięcie obramowania */
+        }
+
+        /* Kolorowanie odpowiednich komórek */
+        td.Nr, td.Rodzaj podzespołu, td.Producent, td.Model, td.cena(w USD), th.header-bar {
+            color: green; /* Jasnoniebieski kolor tekstu */
+        }
+
+        td.procesor, td.intel-amd {
+            color: green; /* Zielony kolor tekstu */
+        }
+    </style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <th colspan="5" class="header-bar"><b>Podzespoły komputerowe-Kordalski Hubert 2G1</b></th>
+    </tr>
+    <tr>
+        <th class="Nr" style="color: white;">Nr</th>
+        <th class="Rodzaj podzespołu" style="color: white;">Rodzaj podzespołu</th>
+        <th class="Producent" style="color: white;">Producent</th>
+        <th class="Model" style="color: white;">Model</th>
+        <th class="Cena(w USD)" style="color: white;">Cena(w USD)</th>
+    </tr>
+    <tr>
+        <td class="Nr">1</td>
+        <td class="Rodzaj podzespołu">Procesor</td>
+        <td class="Producent">Intel</td>
+        <td class="Model">Core i5-10400</td>
+        <td class="Cena(w USD)">199</td>
+    </tr>
+    <tr>
+        <td class="Nr">2</td>
+        <td class="Rodzaj podzespołu">Pamięć RAM</td>
+        <td class="Producent">Corsair</td>
+        <td class="Model">Vengenace LPX 8GB</td>
+        <td class="Cena(w USD)">Po 59</td>
+    </tr>
+    <tr>
+        <td class="Nr">3</td>
+        <td class="Rodzaj podzespołu">Dysk SSD</td>
+        <td class="Producent">Kingston</td>
+        <td class="Model">A2000 256GB</td>
+        <td class="Cena(w USD)"></td>
+    </tr>
+    <tr>
+        <td class="Nr">4</td>
+        <td class="Rodzaj podzespołu">Zasilacz</td>
+        <td class="Producent">EVGA</td>
+        <td class="Model">500W 80+ Bronze</td>
+        <td class="Cena(w USD)">49</td>
+    </tr>
+    <tr>
+        <td class="Nr">5</td>
+        <td class="Rodzaj podzespołu">Płyta główna</td>
+        <td class="Producent">ASUS</td>
+        <td class="Model">Prime H410M-A</td>
+        <td class="Cena(w USD)">69</td>
+    </tr>
+    <tr>
+        <td class="Nr">6</td>
+        <td class="Rodzaj podzespołu">Karta graficzna</td>
+        <td class="Producent">Nvidia geforce</td>
+        <td class="Model">GTX 1660 Super</td>
+        <td class="Cena(w USD)">300</td>
+    </tr>
+    <tr>
+        <th colspan="5" class="center" style="background-color: #D7D7D7; color: black "><b>Dane komputerowe</b></th>
+    </tr>
+</table>
+<br><br>
+<i><a href="index.html"><font color="red" size="35">Wróć na główną</font></a></i>
+</body>
+
+</html>

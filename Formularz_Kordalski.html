@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+</html>
+    <title>Formularz o Grach Komputerowych</title>
+</head>
+<body>
+    <h1>Formularz o Grach Komputerowych</h1>
+       
+        <label for="opis">Opis gry:</label><br>
+        <textarea id="opis" name="opis" rows="4" cols="50" required></textarea><br><br>
+
+  
+        <button type="button" onclick="akcja1()">Akcja 1</button>
+        <button type="button" onclick="akcja2()">Akcja 2</button><br><br>
+
+    
+        <div>
+            <label>Ocena gry:</label><br>
+            <input type="radio" name="ocena" value="1">1
+            <input type="radio" name="ocena" value="2">2
+            <input type="radio" name="ocena" value="3" checked>3
+            <input type="radio" name="ocena" value="4">4
+        </div><br>
+
+   
+        <div>
+            <label>Gatunek gry:</label><br>
+            <input type="radio" name="gatunek" value="Akcji">Akcji<br>
+            <input type="radio" name="gatunek" value="Przygodowa">Przygodowa<br>
+            <input type="radio" name="gatunek" value="Strategiczna">Strategiczna<br>
+        </div><br>
+
+      
+        <div>
+            <label>Język gry:</label><br>
+            <input type="radio" name="jezyk" value="Angielski" checked>Angielski
+            <input type="radio" name="jezyk" value="Polski">Polski
+            <input type="radio" name="jezyk" value="Inny">Inny
+            <input type="radio" name="jezyk" value="Brak">Brak
+            <input type="radio" name="jezyk" value="Wielojęzyczny">Wielojęzyczny
+        </div><br>
+
+       
+        <div>
+            <label>Platformy:</label><br>
+            <input type="checkbox" name="platforma" value="PC">PC
+            <input type="checkbox" name="platforma" value="Xbox">Xbox
+            <input type="checkbox" name="platforma" value="PlayStation">PlayStation
+            <input type="checkbox" name="platforma" value="Nintendo">Nintendo
+        </div><br>
+
+      
+        <div>
+            <label>Tryby gry:</label><br>
+            <input type="checkbox" name="tryb" value="Gra jednoosobowa">Gra jednoosobowa<br>
+            <input type="checkbox" name="tryb" value="Gra wieloosobowa">Gra wieloosobowa<br>
+            <input type="checkbox" name="tryb" value="Tryb kooperacyjny">Tryb kooperacyjny<br>
+            <input type="checkbox" name="tryb" value="Tryb sieciowy">Tryb sieciowy<br>
+        </div><br>
+
+       
+        <div>
+            <label>Dodatkowe opcje:</label><br>
+            <input type="checkbox" name="opcje" value="Grafika 4K">Grafika 4K
+            <input type="checkbox" name="opcje" value="Wsparcie VR">Wsparcie VR
+            <input type="checkbox" name="opcje" value="Mikropłatności">Mikropłatności
+            <input type="checkbox" name="opcje" value="Edytor poziomów">Edytor poziomów
+            <input type="checkbox" name="opcje" value="Inne">Inne
+        </div><br>
+
+       
+        <input type="submit" value="WYŚLIJ"><br><br>
+
+        
+        <input type="reset" value="CZYŚĆ"><br><br>
+
+       
+        <div>
+            <label>Twój nick:</label>
+            <input type="text" name="nick" required><br><br>
+        </div>
+        <div>
+            <label>Twój wiek:</label>
+            <input type="number" name="wiek" min="0" required><br><br>
+        </div>
+        <div>
+            <label>Adres e-mail:</label>
+            <input type="email" name="email" required><br><br>
+        </div>
+        <div>
+            <label>Hasło:</label>
+            <input type="password" name="haslo" required><br><br>
+        </div>
+        <div>
+            <label>Powtórz hasło:</label>
+            <input type="password" name="powtorz_haslo" required><br><br>
+        </div>
+
+      
+        <div>
+            <label>Twoja ulubiona gra:</label><br>
+            <select name="ulubiona_gra">
+                <option value="The Witcher 3">The Witcher 3</option>
+                <option value="Cyberpunk 2077">Cyberpunk 2077</option>
+                <option value="FIFA 22">FIFA 22</option>
+                <option value="Minecraft">Minecraft</option>
+                <option value="Inna">Inna</option>
+            </select><br><br>
+        </div>
+        <div>
+            <label>Twój poziom doświadczenia:</label><br>
+            <select name="poziom_doswiadczenia">
+                <option value="Początkujący">Początkujący</option>
+                <option value="Średniozaawansowany">Średniozaawansowany</option>
+                <option value="Ekspert">Ekspert</option>
+                <option value="Nie dotyczy">Nie dotyczy</option>
+            </select><br><br>
+        </div>
+        <div>
+            <label>Preferowany gatunek gier:</label><br>
+            <select name="preferowany_gatunek">
+                <option value="Akcji">Akcji</option>
+                <option value="Przygodowa">Przygodowa</option>
+                <option value="Strategiczna">Strategiczna</option>
+                <option value="Sportowa">Sportowa</option>
+            </select><br><br>
+        </div>
+    </form>
+	 <p> Link powrotny do <A HREF="Sprawdzian_Kordalski.html">Index.html </A></p>
+</body>
+</html>
